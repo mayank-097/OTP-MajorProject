@@ -1,0 +1,33 @@
+version: '3.1'
+services:
+  api:
+    image: "otp-app"
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/rapipay
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+  db:
+    image: mysql
+    volumes:
+      - db-data:/rapipay
+    ports:
+      - "8001:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=rapipay
+      - MYSQL_PASSWORD=root
+    healthcheck:
+      test: ["CMD", "mysqladmin", "-u", "root", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  db-data:

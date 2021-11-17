@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+otp,com.rapipay.otp.app.Services,EmailService,0,24,0,0,0,8,0,2,0,2
+otp,com.rapipay.otp.app.Services,OTPService,114,183,17,5,24,44,10,9,0,8
+otp,com.rapipay.otp.controller,OTPController,49,7,4,0,16,2,6,2,4,2
+otp,com.rapipay.otp.app,OTPResponse,32,11,0,0,7,6,4,3,4,3
+otp,com.rapipay.otp.entity,OTP,53,91,0,0,7,34,6,14,6,14
+otp,com.rapipay.otp.exception,InvalidAttemptsException,28,0,0,0,9,0,5,0,5,0
+otp,com.rapipay.otp.exception,InvalidEmailException,22,6,0,0,6,3,4,1,4,1
+otp,com.rapipay.otp.exception,EmailNotFoundException,22,6,0,0,6,3,4,1,4,1
+otp,com.rapipay.otp.exception,InvalidOTPException,28,0,0,0,9,0,5,0,5,0
+otp,com.rapipay.otp,OtpApplication,5,8,0,0,2,2,1,2,1,2
+otp,com.rapipay.otp,OtpApplication.new WebMvcConfigurer() {...},0,18,0,0,0,3,0,2,0,2
