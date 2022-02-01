@@ -1,5 +1,6 @@
 # OTP-MajorProject
 
+Language used is Java.
 This project generate otp via email and sms .
 Then validate otp .
 inlcudes all exceptions.
@@ -12,7 +13,7 @@ Technology used -
 4.Postman
 5.Junit testing
 6.Jmeter
-8.Jacoc(java code coverage)
+8.Jacoco(java code coverage)
 
 
        
